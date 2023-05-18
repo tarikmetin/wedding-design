@@ -1,0 +1,508 @@
+@font-face {
+  font-family: "Solar";
+  src: url(fonts/Solar.ttf) format("truetype");
+  font-family: "Solar-Light";
+  src: url(fonts/Solar-Light.ttf) format("truetype");
+  font-family: "Main-Font";
+  src: url(fonts/Main-Font.ttf) format("truetype");
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BACKGROUND */
+
+/* body {
+} */
+
+/* SECTION-0 */
+
+.section-0 {
+  width: 100vw;
+  background-image: url(images/temp-1-section0img.jpg);
+  background-size: 115%;
+  background-position: 0vw center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-0 h2 {
+  font-family: "Solar";
+  font-weight: lighter;
+  font-size: 2.1vw;
+  color: white;
+  padding-top: 4vw;
+}
+
+.section-0 h1 {
+  font-family: "Solar-Light";
+  font-weight: lighter;
+  font-size: 6vw;
+  color: white;
+  padding-top: 10vw;
+}
+.section-0 p {
+  font-family: "Main-Font", sans-serif;
+  font-size: 3vw;
+  color: white;
+}
+
+.section-0 .quick-info {
+  padding-top: 5vw;
+  padding-bottom: 10vw;
+  display: flex;
+  flex-direction: row;
+  gap: 15vw;
+}
+
+.section-0 .quick-info p {
+  font-size: 1.5vw;
+  text-align: center;
+}
+
+/* SECTION-0 MOBILE */
+
+@media (max-width: 600px) {
+  .section-0 {
+    width: 100vw;
+    height: 80vh;
+    background-image: url(images/temp-1-section0img.jpg);
+    background-size: cover;
+    background-position: -65vw center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .section-0 h2 {
+    font-family: "Solar";
+    font-weight: lighter;
+    font-size: 6.3vw;
+    color: white;
+    padding-top: 12vw;
+  }
+
+  .section-0 h1 {
+    font-family: "Solar-Light";
+    font-weight: lighter;
+    font-size: 15vw;
+    text-align: center;
+    color: white;
+    padding-top: 50vw;
+  }
+  .section-0 p {
+    font-family: "Main-Font", sans-serif;
+    font-size: 6vw;
+    color: white;
+  }
+
+  .section-0 .quick-info {
+    padding-top: 15vw;
+    padding-bottom: 30vw;
+    display: flex;
+    flex-direction: row;
+    gap: 15vw;
+  }
+
+  .section-0 .quick-info p {
+    font-size: 3vw;
+    text-align: center;
+  }
+}
+
+/* SECTION-1 */
+
+.section-1 {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  background-color: #18372a;
+}
+
+.section-1 .image-holder {
+  background-image: url(images/temp-1-section1img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center -10vw;
+  padding: 15vw;
+  margin: 5vw;
+  align-self: center;
+}
+
+.section-1 .text-story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 4vw;
+  gap: 4vw;
+}
+
+.section-1 .text-story h2 {
+  font-family: "Solar-Light";
+  font-size: 3.7vw;
+  font-weight: lighter;
+  color: white;
+  align-self: flex-start;
+}
+
+.section-1 .text-story p {
+  font-family: "Main-Font";
+  font-size: 1.5vw;
+  font-weight: lighter;
+  color: white;
+  padding-right: 4vw;
+}
+
+/* SECTION-1 MOBILE */
+
+@media (max-width: 600px) {
+  .section-1 {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: #18372a;
+    padding-bottom: 5vw;
+  }
+
+  .section-1 .image-holder {
+    background-image: url(images/temp-1-section1img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -10vw;
+    padding: 30vw;
+    margin: 5vw;
+    align-self: center;
+    order: 1;
+  }
+
+  .section-1 .text-story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8vw;
+    padding-bottom: 4vw;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    gap: 4vw;
+  }
+
+  .section-1 .text-story h2 {
+    font-family: "Solar-Light";
+    font-size: 6.3vw;
+    font-weight: lighter;
+    color: white;
+    align-self: center;
+  }
+
+  .section-1 .text-story p {
+    font-family: "Main-Font";
+    font-size: 4.5vw;
+    font-weight: lighter;
+    color: white;
+    padding-right: 3vw;
+    align-self: center;
+    text-align: center;
+  }
+}
+
+/* SECTION-2 */
+
+.section-2 {
+  display: flex;
+  justify-content: center;
+  background: #cdd8d3;
+}
+
+.section-2 .text-part {
+  width: 50vw;
+  padding-left: 10vw;
+}
+
+.section-2 .text-part h2 {
+  font-family: "Solar-Light";
+  font-weight: lighter;
+  font-size: 3.7vw;
+  color: #18372a;
+  padding-top: 8vw;
+  text-align: center;
+}
+
+.section-2 .text-part h3 {
+  font-family: "Main-Font";
+  font-weight: lighter;
+  font-size: 2.1vw;
+  color: #18372a;
+  padding-top: 4vw;
+  text-align: center;
+}
+
+.section-2 .text-part p {
+  font-family: "Main-Font";
+  font-weight: lighter;
+  font-size: 1.5vw;
+  color: #18372a;
+  text-align: center;
+}
+
+.section-2 .image-holder {
+  background-image: url(images/temp-1-section2img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center -13vw;
+  padding: 18vw;
+  margin: 5vw;
+  margin-left: 15vw;
+  align-self: center;
+}
+
+/* SECTION-2 MOBILE */
+
+@media (max-width: 600px) {
+  .section-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #cdd8d3;
+    padding-bottom: 5vw;
+  }
+
+  .section-2 .text-part {
+    width: 100vw;
+    padding-left: 0vw;
+    padding-bottom: 10vw;
+  }
+
+  .section-2 .text-part h2 {
+    font-family: "Solar-Light";
+    font-weight: lighter;
+    font-size: 8vw;
+    color: #18372a;
+    padding-top: 12vw;
+    text-align: center;
+  }
+
+  .section-2 .text-part h3 {
+    font-family: "Main-Font";
+    font-weight: lighter;
+    font-size: 5vw;
+    color: #18372a;
+    padding-top: 8vw;
+    text-align: center;
+  }
+
+  .section-2 .text-part p {
+    font-family: "Main-Font";
+    font-weight: lighter;
+    font-size: 4vw;
+    color: #18372a;
+    text-align: center;
+  }
+
+  .section-2 .image-holder {
+    background-image: url(images/temp-1-section2img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -26vw;
+    padding: 36vw;
+    margin: 5vw;
+    align-self: center;
+  }
+}
+
+/* SECTION-3 */
+
+.section-3 {
+  display: flex;
+  background-color: #e1e8e5;
+  width: 100vw;
+  height: 25vw;
+  align-items: center;
+  gap: 5vw;
+}
+
+.section-3 h2 {
+  font-family: "Solar-Light";
+  font-weight: lighter;
+  font-size: 3vw;
+  color: #18372a;
+  text-align: center;
+  padding-left: 10vw;
+}
+
+.section-3 p {
+  font-family: "Main-Font";
+  font-weight: lighter;
+  font-size: 1.5vw;
+  color: #18372a;
+  text-align: center;
+  padding-right: 10vw;
+}
+
+/* SECTION-3 MOBILE */
+
+@media (max-width: 600px) {
+  .section-3 {
+    display: flex;
+    flex-direction: column;
+    background-color: #e1e8e5;
+    width: 100vw;
+    height: fit-content;
+    align-items: center;
+    gap: 5vw;
+  }
+
+  .section-3 h2 {
+    font-family: "Solar-Light";
+    font-weight: lighter;
+    font-size: 5vw;
+    color: #18372a;
+    text-align: center;
+    padding: 10vw;
+    padding-bottom: 0vw;
+  }
+
+  .section-3 p {
+    font-family: "Main-Font";
+    font-weight: lighter;
+    font-size: 4vw;
+    color: #18372a;
+    text-align: center;
+    padding: 10vw;
+    padding-top: 5vw;
+  }
+}
+
+/* SECTION-4 */
+
+.section-4 {
+  width: 100vw;
+  height: 20vw;
+  background-image: url(images/temp-1-mid-image.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/* SECTION-4 MOBILE */
+
+@media (max-width: 600px) {
+  .section-4 {
+    width: 100vw;
+    height: 50vw;
+    background-image: url(images/temp-1-mid-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+/* SECTION-5 */
+
+.section-5 {
+  width: 100vw;
+  height: fit-content;
+  background-color: #f4faf8;
+  display: flex;
+  padding: 5vw;
+  gap: 5vw;
+}
+
+.section-5 .text-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5vw;
+}
+
+.section-5 h2 {
+  font-family: "Solar-Light";
+  font-weight: lighter;
+  font-size: 3.7vw;
+  color: #18372a;
+  text-align: center;
+}
+
+.section-5 p {
+  font-family: "Main-Font";
+  font-weight: lighter;
+  font-size: 1.5vw;
+  color: #18372a;
+  text-align: center;
+}
+
+.section-5 .rsvp {
+  align-items: center;
+  background-color: #f4faf8;
+  border: 2px solid #18372a;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Main-Font";
+  font-size: 1.5vw;
+  font-weight: lighter;
+  padding: 0.5vw 2.5vw;
+}
+
+/* SECTION-5 MOBILE */
+
+@media (max-width: 600px) {
+  .section-5 {
+    width: 100vw;
+    height: fit-content;
+    background-color: #f4faf8;
+    display: flex;
+    flex-direction: column;
+    padding: 5vw;
+    gap: 5vw;
+  }
+
+  .section-5 .text-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5vw;
+  }
+
+  .section-5 h2 {
+    font-family: "Solar-Light";
+    font-weight: lighter;
+    font-size: 6vw;
+    color: #18372a;
+    text-align: center;
+  }
+
+  .section-5 p {
+    font-family: "Main-Font";
+    font-weight: lighter;
+    font-size: 4vw;
+    color: #18372a;
+    text-align: center;
+  }
+
+  .section-5 .rsvp {
+    align-items: center;
+    background-color: #f4faf8;
+    border: 1.5px solid #18372a;
+    border-radius: 0.25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "Main-Font";
+    font-size: 3vw;
+    font-weight: lighter;
+    padding: 0.5vw 5vw;
+  }
+}
